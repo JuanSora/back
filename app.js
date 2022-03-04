@@ -5,9 +5,9 @@ const port = process.env.PORT || 8001;
 
 app.get("/lists", (req, res, next) => {
   res.json({
-      "hello World",
+      'msg':'hello World',
       'env':process.env.MSG ||'noexiste',
-      'port':port
+      'port':'port'
   })
 });
 
